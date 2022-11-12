@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', function(req, rest){
-    rest.send("Seja bem vindo ao app!")
+    rest.sendFile(`${__dirname}/html/index.html`);
 })
 
 app.get('/eita', function(req, res)
